@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5ch URL抽出ツール</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>5ch URL抽出ツール</h1>
+
+<p>5chスレッドURLを入力してください</p>
+
+<input
+type="text"
+id="threadUrl"
+placeholder="https://mevius.5ch.io/test/read.cgi/..."
+>
+
+<button id="analyzeBtn">
+解析開始
+</button>
+
+<div id="status"></div>
+
+<table id="resultTable">
+
+<thead>
+
+<tr>
+<th>レス</th>
+<th>日時</th>
+<th>タイトル</th>
+<th>URL</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+<div class="buttons">
+
+<button id="csvBtn">
+CSV保存
+</button>
+
+<button id="copyBtn">
+コピー
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
